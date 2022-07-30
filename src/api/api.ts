@@ -4,9 +4,9 @@ import { Page } from "../types/page";
 
 const BASE_URL = "https://rickandmortyapi.com/api/";
 
-async function getCharacters(): Promise<Page<CharacterModel>> {
+async function getCharacters(page: number): Promise<Page<CharacterModel>> {
   const response = await axios.get<Page<CharacterModel>>(
-    `${BASE_URL}character`
+    `${BASE_URL}character/?page=${page}`
   );
 
   return response.data;
