@@ -10,8 +10,15 @@ import { Container } from "./styles";
 export function CharacterList() {
   const [page, setPage] = useState(1);
 
-  const { data, isLoading } = useQuery(["characters", page], () =>
-    api.getCharacters(page)
+  const { data, isLoading } = useQuery(
+    ["characters", page],
+    () => api.getCharacters(page),
+    {
+      keepPreviousData: true,
+      onSettled: () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      },
+    }
   );
 
   return (
