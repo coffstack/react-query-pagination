@@ -9,7 +9,9 @@ import { Container, CurrentPageText, PaginationBox } from "./styles";
 
 export function CharacterList() {
   const [page, setPage] = useState(1);
-  const { data } = useQuery(["characters"], () => api.getCharacters(page));
+  const { data } = useQuery(["characters", page], () =>
+    api.getCharacters(page)
+  );
 
   return (
     <Container>
@@ -17,7 +19,9 @@ export function CharacterList() {
       <PaginationBox>
         <Button>Página Anterior</Button>
         <CurrentPageText>Página Atual: {page}</CurrentPageText>
-        <Button>Próxima Página</Button>
+        <Button onClick={() => setPage((old) => old + 1)}>
+          Próxima Página
+        </Button>
       </PaginationBox>
       {data?.results?.map((character) => (
         <CharacterCard key={character.id} character={character} />
