@@ -17,7 +17,12 @@ export function CharacterList() {
     <Container>
       <h1>Lista de Personagens</h1>
       <PaginationBox>
-        <Button>Página Anterior</Button>
+        <Button
+          onClick={() => setPage((old) => Math.max(old - 1, 1))}
+          disabled={page === 1}
+        >
+          Página Anterior
+        </Button>
         <CurrentPageText>Página Atual: {page}</CurrentPageText>
         <Button onClick={() => setPage((old) => old + 1)}>
           Próxima Página
