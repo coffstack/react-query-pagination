@@ -13,6 +13,7 @@ export function CharacterList() {
     () => api.getCharacters(page),
     {
       keepPreviousData: true,
+      staleTime: 5000,
     }
   );
 
