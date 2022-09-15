@@ -23,7 +23,7 @@ export function CharacterList() {
       <h1>Lista de Personagens</h1>
 
       {characterList?.map((character) => (
-        <CharacterCard character={character} />
+        <CharacterCard key={character.id} character={character} />
       ))}
     </Container>
   );
