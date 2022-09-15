@@ -15,7 +15,6 @@ export function CharacterList() {
   async function fetchCharacterList() {
     const { results } = await api.getCharacters(1);
     setCharacterList(results);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
