@@ -8,7 +8,7 @@ import { CharacterCard } from "../CharacterCard/CharacterCard";
 import { Container, CurrentPageText, PaginationBox } from "./styles";
 
 export function CharacterList() {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(40);
   const { data } = useQuery(["characters", page], () =>
     api.getCharacters(page)
   );
@@ -24,7 +24,10 @@ export function CharacterList() {
           Página Anterior
         </Button>
         <CurrentPageText>Página Atual: {page}</CurrentPageText>
-        <Button onClick={() => setPage((old) => old + 1)}>
+        <Button
+          onClick={() => setPage((old) => (data?.info.next ? old + 1 : old))}
+          disabled={!data?.info.next}
+        >
           Próxima Página
         </Button>
       </PaginationBox>
