@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+<div align="center">
+<img src="docs/images/cover.jpg"  width="500" alt="Logo" />
+<h2>Aprenda a fazer listas paginadas no React Query (v4) 
+</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
+</div>
 
-## Available Scripts
+Este projeto foi construído para o vídeo [React Query v4 | Paginação (Tutorial)](https://youtu.be/2mOp4KnVAkU) em nosso canal no YouTube.
 
-In the project directory, you can run:
+Aprenda a fazer paginação de dados na Web com o React Query. Nesse tutorial além de aprender a usar o useQuery você aprenderá também como melhorar a experiência do usuário ao manter os dados da página anterior enquanto carrega a próxima e como preservar os dados por mais tempo para diminuir a quantidade de chamadas a API.
 
-### `npm start`
+Caso você ainda não conheça o React Query acesso o nosso tutorial introdutório sobre a biblioteca: https://youtu.be/mo7MZFYYzWM
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ✅ VOCÊ TAMBÉM VAI GOSTAR DESSES VÍDEOS:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+▸ [Conceitos, Setup, Jest, Debug e Primeiro Teste - Curso React Native Testing Library (Aula 1)](https://youtu.be/lg0K1UpZKlI)
 
-### `npm test`
+▸ [TypeScript - Por Que Usar? TypeScript vs JavaScript na PRÁTICA! (Tutorial)](https://youtu.be/r3-a9-bQx0M)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+▸ [Playlist DICAS de CARREIRA](https://youtube.com/playlist?list=PLn1L40VzKSVLsz6FNb3NrmWLyxs0Eljgx)
 
-### `npm run build`
+## Redes Sociais:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Instagram: @coffstack https://www.instagram.com/coffstack/
+- TikTok: @coffstack https://www.tiktok.com/@coffstack
+- Twitter: @coffstack https://twitter.com/coffstack
+- Blog/Artigos: https://blog.coffstack.com/
+- Instagram: @lucasgar6 https://www.instagram.com/lucasgar6/
