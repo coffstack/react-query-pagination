@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { api } from "../../api/api";
@@ -8,14 +8,12 @@ import { Container, CurrentPageText, PaginationBox } from "./styles";
 
 export function CharacterList() {
   const [page, setPage] = useState(1);
-  const { data } = useQuery(
-    ["characters", page],
-    () => api.getCharacters(page),
-    {
-      keepPreviousData: true,
-      staleTime: 5000,
-    }
-  );
+  const { data } = useQuery({
+    queryKey: ["characters", page],
+    queryFn: () => api.getCharacters(page),
+    placeholderData: keepPreviousData,
+    staleTime: 5000,
+  });
 
   return (
     <Container>
